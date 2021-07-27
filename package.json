@@ -1,0 +1,20 @@
+{
+    "name": "haxeui",
+    "displayName": "HaxeUI",
+    "description": "Snippets for HaxeUI components",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "xml",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
