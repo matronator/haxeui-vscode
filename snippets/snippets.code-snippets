@@ -1,1 +1,432 @@
-{}
+{
+    "Button": {
+		"prefix": "button",
+		"body": [
+			"<button text=\"$1\" />",
+			"$0"
+		],
+		"description": "Button"
+	},
+	"Checkbox": {
+		"prefix": "check",
+		"body": [
+			"<checkbox text=\"$1\"${2: selected=\"true\"} />",
+			"$0"
+		],
+		"description": "Checkbox"
+	},
+	"Option box": {
+		"prefix": "option",
+		"body": [
+			"<option text=\"$1\"${2: selected=\"true\"} />",
+			"$0"
+		],
+		"description": "Option box"
+	},
+	"Label": {
+		"prefix": "label",
+		"body": [
+			"<label text=\"$1\" />",
+			"$0"
+		],
+		"description": "Label"
+	},
+	"List view structure": {
+		"prefix": "list:view",
+		"body": [
+			"<listview id=\"$1\" selectedIndex=\"${2:0}\">",
+			"\t<data>",
+			"\t\t<item text=\"$3\" />$0",
+			"\t</data>",
+			"</listview>"
+		],
+		"description": "List view with data"
+	},
+	"Table view structure": {
+		"prefix": "table:view",
+		"body": [
+			"<tableview>",
+			"\t<header>",
+			"\t\t<column id=\"${1:colA}\" text=\"${2:Column A}\" />",
+			"\t</header>",
+			"\t<data>",
+			"\t\t<item ${3:colA}=\"${4:A1}\" />$0",
+			"\t</data>",
+			"</tableview>"
+		],
+		"description": "Table view with header and data"
+	},
+	"Item": {
+		"prefix": "item",
+		"body": [
+			"<item ${1:text}=\"${2:Text}\" />$0"
+		],
+		"description": "Item tag"
+	},
+	"List view": {
+		"prefix": "list",
+		"body": [
+			"<listview id=\"$1\" selectedIndex=\"${2:0}\">",
+			"\t$0",
+			"</listview>"
+		],
+		"description": "List view tag"
+	},
+	"Table view": {
+		"prefix": "table",
+		"body": [
+			"<tableview>",
+			"\t$0",
+			"</tableview>"
+		],
+		"description": "Table view tag"
+	},
+	"Header": {
+		"prefix": "header",
+		"body": [
+			"<header>",
+			"\t$0",
+			"</header>"
+		],
+		"description": "Header tag"
+	},
+	"Column": {
+		"prefix": "column",
+		"body": [
+			"<column id=\"${1:col}\" text=\"${2:Column}\" />"
+		],
+		"description": "Column tag"
+	},
+	"Data": {
+		"prefix": "data",
+		"body": [
+			"<data>",
+			"\t$0",
+			"</data>"
+		],
+		"description": "Data tag"
+	},
+	"Item renderer": {
+		"prefix": "item:renderer",
+		"body": [
+			"<item-renderer>",
+			"\t$0",
+			"</item-renderer>"
+		],
+		"description": "Item renderer tag"
+	},
+	"Property grid": {
+		"prefix": "prop:grid",
+		"body": [
+			"<property-grid id=\"$1\">",
+			"\t$0",
+			"</property-grid>"
+		],
+		"description": "Property grid tag"
+	},
+	"Property group": {
+		"prefix": "prop:group",
+		"body": [
+			"<property-group text=\"${1:Group}\">",
+			"\t$0",
+			"</property-group>"
+		],
+		"description": "Property group tag"
+	},
+	"Property": {
+		"prefix": "prop",
+		"body": [
+			"<property label=\"$1\" value=\"$2\" />$0"
+		],
+		"description": "Self-closing property tag"
+	},
+	"Property pair": {
+		"prefix": "property",
+		"body": [
+			"<property label=\"$1\" value=\"$2\">",
+			"\t$0",
+			"</property>"
+		],
+		"description": "Pair property tag"
+	},
+	"Textfield": {
+		"prefix": "text",
+		"body": [
+			"<textfield placeholder=\"$1\" />$0"
+		],
+		"description": "Textfield tag"
+	},
+	"Textarea": {
+		"prefix": "textarea",
+		"body": [
+			"<textarea text=\"$1\" />$0"
+		],
+		"description": "Textarea tag"
+	},
+	"Scroll view": {
+		"prefix": "scroll:view",
+		"body": [
+			"<scrollview>",
+			"\t$0",
+			"</scrollview>"
+		],
+		"description": "Scroll view tag"
+	},
+	"Calendar": {
+		"prefix": "calendar",
+		"body": [
+			"<calendar />$0"
+		],
+		"description": "Calendar tag"
+	},
+	"Calendar view": {
+		"prefix": "calendar:view",
+		"body": [
+			"<calendarview />$0"
+		],
+		"description": "Calendar view tag"
+	},
+	"Spacer": {
+		"prefix": "spacer",
+		"body": [
+			"<spacer height=\"${1:10}\" />$0"
+		],
+		"description": "Calendar view tag"
+	},
+	"Progress bar": {
+		"prefix": "progress",
+		"body": [
+			"<progress pos=\"${1:0}\" />$0"
+		],
+		"description": "Progress bar tag"
+	},
+	"Dropdown": {
+		"prefix": "drop",
+		"body": [
+			"<dropdown text=\"$1\">",
+			"\t$0",
+			"</dropdown>"
+		],
+		"description": "Dropdown tag"
+	},
+	"Dropdown inline": {
+		"prefix": "drop:inline",
+		"body": [
+			"<dropdown text=\"$1\" type=\"$2\" />$0"
+		],
+		"description": "Self-closing dropdown tag"
+	},
+	"Dropdown structure": {
+		"prefix": "drop:data",
+		"body": [
+			"<dropdown text=\"$1\">",
+			"\t<data>",
+			"\t\t<item text=\"${1:Text}\" />$0",
+			"\t</data>",
+			"</dropdown>"
+		],
+		"description": "Dropdown with data"
+	},
+	"Menu structure": {
+		"prefix": "menu:view",
+		"body": [
+			"<menubar>",
+			"\t<menu text=\"$1\">",
+			"\t\t<menuitem text=\"${1:Item}\" />$0",
+			"\t</menu>",
+			"</menubar>"
+		],
+		"description": "Menubar structure with menus and items"
+	},
+	"Menubar": {
+		"prefix": "menu:bar",
+		"body": [
+			"<menubar>",
+			"\t$0",
+			"</menubar>"
+		],
+		"description": "Menubar tag"
+	},
+	"Menu": {
+		"prefix": "menu",
+		"body": [
+			"<menu text=\"${1:Menu}\">",
+			"\t$0",
+			"</menu>"
+		],
+		"description": "Menu tag"
+	},
+	"Menu item": {
+		"prefix": "menu:item",
+		"body": [
+			"<menuitem text=\"${1:Item}\" />$0"
+		],
+		"description": "Menu item tag"
+	},
+	"Menu checkbox": {
+		"prefix": "menu:check",
+		"body": [
+			"<menucheckbox text=\"${1:Item}\" />$0"
+		],
+		"description": "Menu checkbox tag"
+	},
+	"Menu option box": {
+		"prefix": "menu:option",
+		"body": [
+			"<menuoptionbox text=\"${1:Item}\" />$0"
+		],
+		"description": "Menu option box tag"
+	},
+	"Menu separator": {
+		"prefix": "menu:sep",
+		"body": [
+			"<menuseparator />$0"
+		],
+		"description": "Menu separator tag"
+	},
+	"Scrollbar": {
+		"prefix": "scroll",
+		"body": [
+			"<scroll pos=\"${1:0}\" pageSize=\"${2:50}\" />$0"
+		],
+		"description": "Scroll tag"
+	},
+	"Slider": {
+		"prefix": "slider",
+		"body": [
+			"<slider pos=\"${1:0}\" />$0"
+		],
+		"description": "Slider tag"
+	},
+	"Image": {
+		"prefix": "img",
+		"body": [
+			"<image resource=\"$1\" />$0"
+		],
+		"description": "Image tag"
+	},
+	"Stepper": {
+		"prefix": "step",
+		"body": [
+			"<number-stepper />$0"
+		],
+		"description": "Number stepper tag"
+	},
+	"Switch": {
+		"prefix": "switch",
+		"body": [
+			"<switch />$0"
+		],
+		"description": "Switch tag"
+	},
+	"Tabview": {
+		"prefix": "tab",
+		"body": [
+			"<tabview>",
+			"\t$0",
+			"</tabview>"
+		],
+		"description": "Tabview tag"
+	},
+	"Tabview structure": {
+		"prefix": "tab:view",
+		"body": [
+			"<tabview>",
+			"\t<box text=\"${1:Page 1}\">",
+			"\t\t$0",
+			"\t</box>",
+			"</tabview>"
+		],
+		"description": "Tabview structure"
+	},
+	"Tab bar": {
+		"prefix": "tab:bar",
+		"body": [
+			"<tabbar>",
+			"\t$0",
+			"</tabbar>"
+		],
+		"description": "Tab bar tag"
+	},
+	"Accordion": {
+		"prefix": "accordion",
+		"body": [
+			"<accordion>",
+			"\t$0",
+			"</accordion>"
+		],
+		"description": "Accordion tag"
+	},
+	"Absolute layout": {
+		"prefix": "absolute",
+		"body": [
+			"<absolute id=\"$1\">",
+			"\t$0",
+			"</absolute>"
+		],
+		"description": "Absolute tag"
+	},
+	"Box layout": {
+		"prefix": "box",
+		"body": [
+			"<box>",
+			"\t$0",
+			"</box>"
+		],
+		"description": "Box tag"
+	},
+	"Horizontal layout": {
+		"prefix": "hbox",
+		"body": [
+			"<hbox>",
+			"\t$0",
+			"</hbox>"
+		],
+		"description": "Horizontal box tag"
+	},
+	"Vertical layout": {
+		"prefix": "vbox",
+		"body": [
+			"<vbox>",
+			"\t$0",
+			"</vbox>"
+		],
+		"description": "Vertical box tag"
+	},
+	"Grid layout": {
+		"prefix": "grid",
+		"body": [
+			"<grid>",
+			"\t$0",
+			"</grid>"
+		],
+		"description": "Grid tag"
+	},
+	"Group": {
+		"prefix": "group",
+		"body": [
+			"<group>",
+			"\t$0",
+			"</group>"
+		],
+		"description": "Group tag"
+	},
+	"Script": {
+		"prefix": "script",
+		"body": [
+			"<script>",
+			"\t$0",
+			"</script>"
+		],
+		"description": "Script tag"
+	},
+	"Style": {
+		"prefix": "style",
+		"body": [
+			"<style>",
+			"\t$0",
+			"</style>"
+		],
+		"description": "Style tag"
+	},
+}
