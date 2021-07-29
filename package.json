@@ -27,10 +27,23 @@
         "haxeui components"
     ],
     "license": "MIT",
-    "author": "Matronator <info@matronator.com>",
+    "author": {
+        "name": "Matronator",
+        "email": "info@matronator.com",
+        "url": "https://matronator.com"
+    },
     "galleryBanner": {
         "color": "#ffffff",
         "theme": "light"
     },
-    "icon": "images/icon.png"
+    "icon": "images/icon.png",
+    "homepage": "https://github.com/matronator/haxeui-vscode",
+    "repository": {
+        "url": "https://github.com/matronator/haxeui-vscode.git",
+        "type": "git"
+    },
+    "readme": "https://github.com/matronator/haxeui-vscode#readme",
+    "bugs": {
+        "url": "https://github.com/matronator/haxeui-vscode/issues"
+    }
 }
