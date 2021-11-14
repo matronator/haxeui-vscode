@@ -1,4 +1,4 @@
-#### Notice: If you like this project, please consider [donating](#support). The battery on my macbook died and I need to get it replaced to be able to work, but a battery replacement for macbook is kinda expensive and money's little tight right now. Any help would be much appretiated! Thank you :)
+<!-- #### Notice: If you like this project, please consider [donating](#support). The battery on my macbook died and I need to get it replaced to be able to work, but a battery replacement for macbook is kinda expensive and money's little tight right now. Any help would be much appretiated! Thank you :) -->
 
 # HaxeUI snippets
 
@@ -17,6 +17,8 @@ Open VSX: https://open-vsx.org/extension/Matronator/haxeui
 <a href="https://www.blockchain.com/btc/address/35VRpVQaqFWjUCnVRpGineShz76QyYgSVg" target="_blank"><img src=".github/RibbonDonateBitcoin.png" height="36"></a></div>
 
 **Bitcoin address:** `35VRpVQaqFWjUCnVRpGineShz76QyYgSVg`
+
+**Monero address:** `84yS17W3dLvV6Lj2XaATgYX4Ef7tPpGtmdBoanyL68GofxM2VQD8ZUNWaKpdyerJdZ7mceQ6r7e8G2om6q6k8zEZ4ndy2xG`
 
 ## Release Notes
 
